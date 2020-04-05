@@ -9,15 +9,31 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+{
+    View *_v;
+    UILabel *_messageLabel;
+}
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (View *)v
+{
+    return _v;
+} //v
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _v = [[View alloc] initWithFrame:CGRectZero];
+    }
+    return self;
 }
 
+- (void)loadView
+{
+    [self setView:_v];
+} //loadView
 
 @end

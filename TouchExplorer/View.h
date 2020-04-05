@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  View.h
 //  TouchExplorer
 //
 //  Created by Artem Rakhmatulin on 05/04/2020.
@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "View.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ViewController : UIViewController
+@interface View : UIView
 
-- (View *)v;
+- (UILabel *)messageLabel;
+- (UILabel *)tapsLabel;
+- (UILabel *)touchesLabel;
+- (UILabel *)gestureLabel;
 
 @end
 
